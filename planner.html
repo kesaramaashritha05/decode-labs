@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner - TravelMate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-top: 80px;">
+    <!-- Navbar -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo">Travel<span>Mate</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="planner.html" class="active">Trip Planner</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Smart Trip Planner</h2>
+                <p>Customize your dream vacation and get a personalized itinerary in seconds.</p>
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: var(--radius-lg); shadow: var(--shadow-lg);">
+                <form id="tripPlannerForm" novalidate>
+                    <div class="form-group">
+                        <label for="destination">Where are you going?</label>
+                        <select id="destination" required>
+                            <option value="">Select a destination</option>
+                            <option value="araku">Araku Valley</option>
+                            <option value="lambasingi">Lambasingi</option>
+                            <option value="vanjangi">Vanjangi</option>
+                            <option value="maredumilli">Maredumilli</option>
+                            <option value="goa">Goa</option>
+                            <option value="manali">Manali</option>
+                        </select>
+                        <span class="error-msg">Please select a destination.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="travelDate">Travel Date</label>
+                        <input type="date" id="travelDate" required>
+                        <span class="error-msg">Please select a valid future date.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (Days)</label>
+                        <input type="number" id="duration" min="1" max="30" placeholder="e.g. 5" required>
+                        <span class="error-msg">Please enter duration (1-30 days).</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" min="1" placeholder="e.g. 2" required>
+                        <span class="error-msg">At least 1 traveler is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Requirements (Optional)</label>
+                        <textarea id="notes" rows="4" placeholder="Any specific preferences?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Generate Plan</button>
+                </form>
+                <div id="plannerSuccess" style="display: none; text-align: center; margin-top: 1.5rem; color: var(--accent); font-weight: 600;">
+                    Your trip plan request has been submitted successfully!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">Travel<span>Mate</span></div>
+                    <p class="footer-text">Your smart companion for planning unforgettable journeys.</p>
+                </div>
+                <div>
+                    <h4 class="footer-h">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="planner.html">Trip Planner</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-h">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-h">Contact</h4>
+                    <ul class="footer-links">
+                        <li>support@travelmate.com</li>
+                        <li>+1 234 567 890</li>
+                        <li>123 Travel Lane, NL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 TravelMate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TravelMate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-top: 80px;">
+    <!-- Navbar -->
+    <header id="header" class="scrolled">
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="logo">Travel<span>Mate</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="planner.html">Trip Planner</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Have questions? We're here to help you around the clock.</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem;">
+                <div class="contact-info">
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Our Office</h4>
+                        <p>123 Travel Lane,<br>Explorer City, 56789</p>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Email Us</h4>
+                        <p>support@travelmate.com<br>info@travelmate.com</p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Call Us</h4>
+                        <p>+1 234 567 890<br>+1 987 654 321</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Rahul Sharma" required>
+                            <span class="error-msg">Please enter your full name.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="rahul@example.com" required>
+                            <span class="error-msg">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Trip Query" required>
+                            <span class="error-msg">Please enter a subject.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="6" placeholder="How can we help you?" required></textarea>
+                            <span class="error-msg">Please type your message.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                    <div id="contactSuccess" style="display: none; text-align: center; margin-top: 1.5rem; color: var(--accent); font-weight: 600;">
+                        Thank you! Your message has been sent.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">Travel<span>Mate</span></div>
+                    <p class="footer-text">Your smart companion for planning unforgettable journeys.</p>
+                </div>
+                <div>
+                    <h4 class="footer-h">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="planner.html">Trip Planner</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-h">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-h">Contact</h4>
+                    <ul class="footer-links">
+                        <li>support@travelmate.com</li>
+                        <li>+1 234 567 890</li>
+                        <li>123 Travel Lane, NL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 TravelMate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @media (max-width: 768px) {
+            section .container > div {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            .contact-info {
+                text-align: center;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
