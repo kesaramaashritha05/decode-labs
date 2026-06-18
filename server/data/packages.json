@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "destinationId": 1,
+    "name": "Romantic Paris",
+    "price": 1200,
+    "duration": "5 Days",
+    "description": "Experience the charm of Paris with your loved one."
+  },
+  {
+    "id": 2,
+    "destinationId": 2,
+    "name": "Tokyo Explorer",
+    "price": 1500,
+    "duration": "7 Days",
+    "description": "Discover the vibrant streets of Tokyo."
+  },
+  {
+    "id": 3,
+    "destinationId": 3,
+    "name": "Bali Bliss",
+    "price": 800,
+    "duration": "4 Days",
+    "description": "Relax and unwind in the tropical paradise of Bali."
+  }
+]

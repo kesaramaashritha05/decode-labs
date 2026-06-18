@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "country": "France",
+    "description": "The city of light and love.",
+    "image": "https://example.com/paris.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tokyo",
+    "country": "Japan",
+    "description": "A bustling metropolis with a blend of tradition and modernity.",
+    "image": "https://example.com/tokyo.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bali",
+    "country": "Indonesia",
+    "description": "A paradise of beaches and culture.",
+    "image": "https://example.com/bali.jpg"
+  }
+]
