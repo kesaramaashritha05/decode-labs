@@ -1,6 +1,7 @@
-// server/app.js
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const connectDB = require('./config/db');
 
 const authRoutes = require('./routes/authRoutes');
 const destinationRoutes = require('./routes/destinationRoutes');
@@ -9,6 +10,9 @@ const tripRoutes = require('./routes/tripRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
+
+// Connect to Database
+connectDB();
 
 // Middleware
 app.use(cors());

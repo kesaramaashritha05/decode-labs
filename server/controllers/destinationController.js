@@ -1,8 +1,12 @@
-// server/controllers/destinationController.js
-const destinations = require('../data/destinations.json');
+const Destination = require('../models/Destination');
 
-const getDestinations = (req, res) => {
-    res.status(200).json(destinations);
+const getDestinations = async (req, res) => {
+    try {
+        const destinations = await Destination.find();
+        res.status(200).json(destinations);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 };
 
 module.exports = { getDestinations };
